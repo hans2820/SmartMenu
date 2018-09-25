@@ -1,0 +1,5 @@
+﻿<Smart menu gruppe 8>
+<Skriv et tal der svarer til det menupunkt du vil indlæse>
+<1> <Menupunkt 1>
+<2> <Menupunkt 2>
+<3> <Menupunkt 3>
