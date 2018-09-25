@@ -14,7 +14,7 @@ namespace FunctionLibrary
         }
         public static string DoThat()
         {
-            return "Result from DoThat";
+            return "Result from Do That";
         }
         public static string DoSomething(string something)
         {
