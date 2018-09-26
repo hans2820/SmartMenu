@@ -14,7 +14,7 @@ namespace SmartMenuLibrary
         }
         public void exit()
         {
-
+            Environment.Exit(0);
         }
     }
 }
