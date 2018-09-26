@@ -8,9 +8,10 @@ namespace SmartMenuLibrary
 {
     public class SmartMenu
     {
-        public void LoadMenu(string path)
+        public void LoadMenu(string path) //vi kan skrive i consolen herfra
         {
-            
+            System.IO.StreamReader file = new System.IO.StreamReader(@"D:\datamatiker\SmartMenu\SmartMenuLibrary\" + path); 
+            Console.WriteLine("Hello world");
         }
         public void Activate()
         {
