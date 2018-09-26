@@ -18,8 +18,8 @@ namespace SmartMenuLibrary
             string clean = "";
             for (int i = 0; i < MenuSpecsArray.Length; i++)
             {
-                clean = Regex.Replace(MenuSpecsArray[i], "[^A-Z a-z 0-9 ]", "");
-                Console.WriteLine(clean);
+                clean = Regex.Replace(MenuSpecsArray[i], "[^A-Z a-z 0-9 \r\n]", "");
+                Console.Write(clean+" ");
             }
             Console.ReadKey();
             
