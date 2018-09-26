@@ -21,12 +21,23 @@ namespace SmartMenuLibrary
                 clean = Regex.Replace(MenuSpecsArray[i], "[^A-Z a-z 0-9 \r\n]", "");
                 Console.Write(clean+" ");
             }
-            Console.ReadKey();
-            
+            Console.WriteLine("");                      
         }
         public void Activate() //We can write to the console from here
         {
-            
+            Bindings binding = new Bindings();
+            int number = int.Parse(Console.ReadLine());
+            string res = "";
+            if(number == 0)
+            {
+                binding.exit();
+            }
+            else if(0 != number)
+            {
+                res = binding.call(number);
+            }
+            Console.WriteLine(res);
+            Console.ReadKey();
         }
     }
 }

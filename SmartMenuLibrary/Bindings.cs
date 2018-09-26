@@ -8,5 +8,13 @@ namespace SmartMenuLibrary
 {
     public class Bindings
     {
+        public string call(int number)
+        {
+            return "hello world";
+        }
+        public void exit()
+        {
+
+        }
     }
 }
