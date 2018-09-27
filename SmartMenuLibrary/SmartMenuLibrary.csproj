@@ -50,6 +50,7 @@
     <Content Include="MenuSpec.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="MenuSpecEng.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FunctionLibrary\FunctionLibrary.csproj">
