@@ -12,7 +12,7 @@ namespace SmartMenuLibrary
     {
         public void LoadMenu(string path) //We can write to the console from here
         {
-            string file = File.ReadAllText(@"D:\datamatiker\SmartMenu\SmartMenuLibrary\" + path);
+            string file = File.ReadAllText(path);
                         
             string[] MenuSpecsArray = file.Split(';');
             for (int i = 0; i < MenuSpecsArray.Length; i++)
