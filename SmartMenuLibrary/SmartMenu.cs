@@ -10,19 +10,25 @@ namespace SmartMenuLibrary
 {
     public class SmartMenu
     {
-        public void LoadMenu(string path) //We can write to the console from here
+        public void LoadMenu(string path)
         {
             string file = File.ReadAllText(path);
-                        
-            string[] MenuSpecsArray = file.Split(';');
+            string[] MenuSpecsArray = file.Split('>');
+            Console.WriteLine(Regex.Replace(MenuSpecsArray[0], "[^A-Å a-å 0-9]", ""));
             for (int i = 0; i < MenuSpecsArray.Length; i++)
             {
-                string clean = Regex.Replace(MenuSpecsArray[i], "[^A-Å a-å 0-9 \r\n]", "");
+                string clean = "";
+                if(i != 1 && i != 0)
+                {                    
+                   clean = Regex.Replace(MenuSpecsArray[i], "[^A-Å a-å 0-9 \r\n]", "");
+                }
+                
                 Console.Write(clean+" ");
             }
-            Console.WriteLine("");                      
+            Console.WriteLine("\n");
+            Console.WriteLine(Regex.Replace(MenuSpecsArray[1], "[^A-Å a-å 0-9 \r ()]", ""));
         }
-        public void Activate() //We can write to the console from here
+        public void Activate()
         {
             Bindings binding = new Bindings();
             int number = int.Parse(Console.ReadLine());
