@@ -1,5 +1,6 @@
 ﻿<Smart menu gruppe 8>
 <Skriv et tal der svarer til det menupunkt du vil indlæse og skriv 0 for at afslutte>
-<1>;<Bereng areal af en kvadrat>
-<2>;<Beregn areal af et rektangel>
-<3>;<Beregn noget>
+<1>;<Do That>
+<2>;<Do This>
+<3>;<Do Something>
+<4>;<Svaret På Livet>
