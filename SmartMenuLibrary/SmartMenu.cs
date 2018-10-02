@@ -14,19 +14,18 @@ namespace SmartMenuLibrary
         {
             string file = File.ReadAllText(path);
             string[] MenuSpecsArray = file.Split('>');
-            Console.WriteLine(Regex.Replace(MenuSpecsArray[0], "[^A-Å a-å 0-9]", ""));
+            Console.WriteLine(Regex.Replace(MenuSpecsArray[0], "[^A-Z ÆØÅ æøå a-z 0-9]", ""));
             for (int i = 0; i < MenuSpecsArray.Length; i++)
             {
                 string clean = "";
                 if(i != 1 && i != 0)
                 {                    
-                   clean = Regex.Replace(MenuSpecsArray[i], "[^A-Å a-å 0-9 \r\n]", "");
-                }
-                
+                   clean = Regex.Replace(MenuSpecsArray[i], "[^A-Z ÆØÅ æøå a-z 0-9 \r\n]", "");
+                }                
                 Console.Write(clean+" ");
             }
             Console.WriteLine("\n");
-            Console.WriteLine(Regex.Replace(MenuSpecsArray[1], "[^A-Å a-å 0-9 \r ()]", ""));
+            Console.WriteLine(Regex.Replace(MenuSpecsArray[1], "[^A-Z ÆØÅ æøå a-z 0-9 \r ()]", ""));
         }
         public void Activate()
         {

@@ -10,7 +10,7 @@ namespace FunctionLibrary
     {
         public static string DoThis()
         {
-            return "Result from DoThis1";
+            return "Result from DoThis";
         }
         public static string DoThat()
         {
